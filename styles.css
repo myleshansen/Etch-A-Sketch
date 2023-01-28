@@ -6,15 +6,16 @@
 
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  
 }
 
 .controls {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  margin-right: 20px;
+  justify-content: space-evenly;
   max-height: 480px;
 }
 
@@ -22,17 +23,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  min-height: 480px;
   max-height: 480px;
+  min-width: 480px;
   max-width: 480px;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   margin-top: 20px;
 }
 
-.grid-item {
-  width: 30px;
-  height: 30px;
-}
-
-.grid-item:hover {
-  background-color: blue;
+button {
+    margin: 5px;
 }
